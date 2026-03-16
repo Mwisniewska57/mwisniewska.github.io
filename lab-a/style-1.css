@@ -170,19 +170,19 @@ h2{
         border: 10px groove #c0a53c;
     }
 }
-/* 2. Desktop Adjustment */
-@media (min-width: 1024px) {
-    .opishistoria {
-        flex-direction: row; /* Desktop: side-by-side */
-        align-items: flex-start;
-        justify-content: space-between;
-    }
+/*!* 2. Desktop Adjustment *!*/
+/*@media (min-width: 1024px) {*/
+/*    .opishistoria {*/
+/*        flex-direction: row; !* Desktop: side-by-side *!*/
+/*        align-items: flex-start;*/
+/*        justify-content: space-between;*/
+/*    }*/
 
-    .mainphoto {
-        flex: 0 0 400px; /* Fix the image width on desktop */
-    }
+/*    .mainphoto {*/
+/*        flex: 0 0 400px; !* Fix the image width on desktop *!*/
+/*    }*/
 
-    .historia {
-        flex: 1; /* Let the text take up the remaining space */
-    }
-}
+/*    .historia {*/
+/*        flex: 1; !* Let the text take up the remaining space *!*/
+/*    }*/
+/*}*/
