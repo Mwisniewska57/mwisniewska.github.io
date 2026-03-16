@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes grow-progress {
+    from{
+        transform:scaleX(0);
+    }
+    to{
+        transform:scaleX(1);
+    }
+}
+@font-face {
+    font-family:'Magtis';
+    src: url("czcionki/Magtis.otf") format("opentype"); 
+    
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity:1;
+        scale:1;
+    }
+}
+
+.cover{
+    height: auto;
+    width: 100%;
+    max-width: 1067px;
+    aspect-ratio: 1067 / 600;
+    display:flex;
+    justify-content: center;
+    margin:0 auto;
+    border: 20px groove #c0a53c;
+    margin-bottom: 50px;
+}
+body{
+    background-image: url("zdjecia-styl1/cc5a25c60a9f55c3907b522b5e0838f3.jpg");
+    background-attachment: fixed;
+    background-size:cover; /* size i attachment gemini*/
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.opishistoria{
+    font-family: 'Magtis',sans-serif;
+    color: 	#c0a53c;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+/*.mainphoto{*/
+/*    width: 350px;*/
+/*    height: auto;*/
+/*    flex-shrink: 0;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 0 10px 30px rgba(0,0,0,0.3);*/
+/*}*/
+.historia{
+    flex: 1;
+    min-width: 300px;
+    font-size: 18px;
+}
+.nazwa{
+    font-family: 'Magtis',sans-serif;
+    color: 	#c0a53c;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+.nazwa p {
+    font-size: 18px;
+}
+.opishistoria p {
+    font-size: 18px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Magtis',sans-serif;
+    color: 	#c0a53c;
+    font-size: 150px;
+    margin: 40px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+h2{
+    font-family: 'Magtis',sans-serif;
+    color: 	#c0a53c;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+#progress{
+    transform-origin:0 50%;
+    animation:grow-progress linear forwards;
+    animation-timeline: scroll();
+}
+.albumy {
+    display: flex;
+    flex: 0 0 5em;
+    gap: 1em;
+    animation: spin 20s infinite linear;
+    padding-right: 1em;
+}
+.karuzela{
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 60px;
+}
+.karuzela::-webkit-scrollbar{
+    display:none;
+}
+@keyframes spin{
+    from{transform: translateX(0);}
+    to{transform: translateX(-50%);}
+    
+}
+.members{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+.members img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 300ms;
+}
+.members img:hover {
+    transform: scale(1.05);
+}
+
+@media(max-width: 1200px) {
+    h1 {
+        font-size: 100px;
+    }
+    .albumy {
+        flex: 0 0 4em;
+        gap: 0.5em;
+    }
+}
+
+@media(max-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+    .opishistoria {
+        flex-direction: column;
+    }
+    .albumy {
+        flex: 0 0 3em;
+        gap: 0.3em;
+    }
+}
+
+@media(max-width: 480px) {
+    h1 {
+        font-size: 40px;
+    }
+    .cover {
+        border: 10px groove #c0a53c;
+    }
+}
+/* 2. Desktop Adjustment */
+@media (min-width: 1024px) {
+    .opishistoria {
+        flex-direction: row; /* Desktop: side-by-side */
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .mainphoto {
+        flex: 0 0 400px; /* Fix the image width on desktop */
+    }
+
+    .historia {
+        flex: 1; /* Let the text take up the remaining space */
+    }
+}
