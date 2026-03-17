@@ -19,6 +19,16 @@
     transform: scale(1.02);
     background-color: aliceblue;
 }
+.linkinawigacja{
+    display:none;
+}
+.but{
+    display:none;
+}
+.Logo{
+    display:none;
+}
+
 .mainphoto{
     display:none;
 }
