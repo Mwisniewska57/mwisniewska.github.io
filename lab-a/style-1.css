@@ -19,7 +19,9 @@
     transform: scale(1.02);
     background-color: aliceblue;
 }
-
+.mainphoto{
+    display:none;
+}
 .cover{
     height: auto;
     width: 100%;
@@ -40,6 +42,10 @@ body{
     max-width: 1400px;
     margin: 0 auto;
     line-height: 1.8;
+
+}
+.view{
+    flex:1;
 }
 .opishistoria{
     font-family: 'Magtis',sans-serif;
@@ -191,6 +197,33 @@ figcaption{
     text-align: center;
     margin-top: 80px;
     margin-bottom: 30px;
+}
+footer{
+    font-family: 'Magtis',sans-serif;
+    color:#c0a53c;
+    margin-top: 50px;
+    background: rgba(25,25,25,0.6);
+    backdrop-filter: blur(10px);
+    border-top:2px solid #c0a53c;
+    padding: 20px;
+    text-align: center;
+}
+.social a{
+    font-family: 'Magtis',sans-serif;
+    color:antiquewhite;
+    text-align: center;
+}
+.social ul{
+    list-style:none;
+    padding:0;
+}
+.social li{
+    margin:10px 0;
+    font-size:18px;
+}
+/*hover z gemini*/
+.social a:hover{
+    text-decoration: underline;
 }
 
 @media(max-width: 1200px) {
