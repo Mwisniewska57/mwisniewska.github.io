@@ -47,3 +47,24 @@ Thumbs.db
 .next/
 out/
 
+# IDE - PhpStorm i inne
+.idea/
+*.iml
+cmake-build-*/
+.DS_Store
+Thumbs.db
+
+# Pliki instrukcji i dokumentacji projektowej (np. PDF, docx)
+*.pdf
+*.docx
+*.txt
+instrukcja/
+dokumentacja/
+
+# PureRef
+*.pur
+PureRef/
+
+# Inne niepotrzebne pliki
+node_modules/
+.env

@@ -3,6 +3,16 @@
     padding:0;
     box-sizing: border-box;
 }
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity:1;
+        scale:1;
+    }
+}
 @font-face {
     font-family:'Magtis';
     src: url("czcionki/Magtis.otf") format("opentype");
@@ -22,8 +32,57 @@
 body{
 background-image: url("zdjecia-styl2/304e7ec7d195ea7fe7addc8ced757245.jpg");
     background-attachment: fixed;
-background-size:cover;
+    background-size:cover;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0 auto;
+    max-width: 1400px;
 }
+.view{
+    display: grid;
+    grid-template-columns:1fr;
+    gap:40px;
+    padding:20px;
+}
+.mainphoto{
+    float:left;
+    /*ramnka przez gemini*/
+    display:block;
+    width:100%;
+    max-width:400px;
+    padding:5px;
+    margin-right:30px;
+    background: linear-gradient(135deg, #E7367D, #FFB6C1,#c0a53c);
+    border-radius:20px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.mainphoto:hover{
+    transform: scale(1.02);
+    background-color: aliceblue;
+}
+
+.opishistoria{
+    font-family: 'Magtis',sans-serif;
+    color: 	white;
+    
+    gap: 5px;
+    font-size:18px;
+    margin-bottom: 60px;
+    background: rgba(25, 25, 25, 0.6);
+    /*backdrop-filter: blur(10px);*/
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px #ffff;
+    animation: appear 1s  ease-out;
+}
+.opishistoria::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
 .cover{
     display:none;
 }
@@ -66,4 +125,145 @@ background-size:cover;
 }
 .butt{
     display:flex;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'BlackHeat',sans-serif;
+    color: 	#E7367D;
+    font-size: clamp(20px, 10vw, 150px);
+    /*clamp z gemini*/
+    margin: 40px 0;
+    text-shadow: 3px 3px 3px #17030B;
+}
+h2{
+    font-family: 'BlackHeat',sans-serif;
+    color:#E7367D;
+    text-shadow: 2px 2px 4px #17030B;
+   
+}
+.albumy{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 60px;
+    background: rgba(25, 25, 25, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px #ffff;
+    animation: appear 1s  ease-out;
+}
+.albumy:hover{
+    transform: scale(1.02);
+    
+}
+/*gemini*/
+div[aria-hidden="true"] {
+    display: none;
+}
+
+.doflex{
+    display:flex;
+    align-items: flex-start;
+    margin-bottom:50px;
+    gap:50px;
+    
+}
+.nazwa{
+   display:flex;
+    flex-direction: column;
+    flex:1;
+    align-items: flex-start;
+    gap: 5px;
+    font-size:18px;
+    margin-bottom: 60px;
+    background: rgba(25, 25, 25, 0.6);
+    /*backdrop-filter: blur(10px);*/
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px #ffff;
+    animation: appear 1s  ease-out;
+    font-family: 'Magtis',sans-serif;
+    color:white;
+}
+.members{
+    display:flex;
+    flex-wrap: wrap;
+    flex: 0 0 300px;
+}
+figcaption{
+    display:flex;
+    align-items: center;
+    font-family: 'Magtis',sans-serif;
+    color:white;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+footer{
+    font-family: 'Magtis',sans-serif;
+    color:white;
+    margin-top: 50px;
+    background: rgba(25,25,25,0.6);
+    border-top:2px solid white;
+    padding: 20px;
+    text-align: center;
+    /*gemini*/
+    background: rgba(14, 5, 67, 0.8); /* Półprzezroczysty granat */
+    backdrop-filter: blur(15px); /* Rozmycie tego, co pod spodem */
+    border-top: 3px solid #E7367D; /* Grubsza, różowa linia */
+    box-shadow: 0 -10px 20px rgba(58, 5, 204, 0.3); /* Poświata idąca w górę */
+}
+.social a{
+    font-family: 'Magtis',sans-serif;
+    color:antiquewhite;
+    text-align: center;
+}
+.social ul{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    list-style:none;
+}
+.social li{
+    margin:0;
+    font-size:18px;
+}
+/*hover z gemini*/
+.social a:hover{
+    text-decoration: underline;
+}
+@media(max-width: 1200px) {
+    h1 {
+        font-size: 100px;
+    }
+    .albumy {
+        flex: 0 0 4em;
+        gap: 0.5em;
+    }
+}
+
+@media(max-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+    .opishistoria {
+        flex-direction: column;
+    }
+    .albumy {
+        flex: 0 0 3em;
+        gap: 0.3em;
+    }
+}
+
+@media(max-width: 480px) {
+    h1 {
+        font-size: 40px;
+    }
+    .cover {
+        border: 10px groove #c0a53c;
+    }
 }
