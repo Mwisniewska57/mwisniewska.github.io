@@ -15,15 +15,9 @@
     src: url("czcionki/Magtis.otf") format("opentype"); 
     
 }
-@keyframes appear {
-    from{
-        opacity: 0;
-        scale: 0.5;
-    }
-    to{
-        opacity:1;
-        scale:1;
-    }
+.cover:hover{
+    transform: scale(1.02);
+    background-color: aliceblue;
 }
 
 .cover{
@@ -36,6 +30,7 @@
     margin:0 auto;
     border: 20px groove #c0a53c;
     margin-bottom: 50px;
+    transition: transform 0.3s ease; 
 }
 body{
     background-image: url("zdjecia-styl1/cc5a25c60a9f55c3907b522b5e0838f3.jpg");
@@ -46,37 +41,41 @@ body{
     margin: 0 auto;
     line-height: 1.8;
 }
-
 .opishistoria{
     font-family: 'Magtis',sans-serif;
     color: 	#c0a53c;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    align-items: center;
-    flex-wrap: wrap;
+    gap: 5px;
+    font-size:18px;
     margin-bottom: 60px;
+    background: rgba(25, 25, 25, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid #c0a53c;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
-/*.mainphoto{*/
-/*    width: 350px;*/
-/*    height: auto;*/
-/*    flex-shrink: 0;*/
-/*    border-radius: 10px;*/
-/*    box-shadow: 0 10px 30px rgba(0,0,0,0.3);*/
-/*}*/
-.historia{
-    flex: 1;
-    min-width: 300px;
-    font-size: 18px;
-}
+
+
 .nazwa{
     font-family: 'Magtis',sans-serif;
     color: 	#c0a53c;
     margin-bottom: 60px;
     font-size: 18px;
+    background: rgba(25, 25, 25, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid #c0a53c;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 .nazwa p {
     font-size: 18px;
+    line-height: 1.8;
 }
 .opishistoria p {
     font-size: 18px;
@@ -86,7 +85,8 @@ h1{
     justify-content: center;
     font-family: 'Magtis',sans-serif;
     color: 	#c0a53c;
-    font-size: 150px;
+    font-size: clamp(40px, 10vw, 150px); 
+    /*clamp z gemini*/
     margin: 40px 0;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
@@ -97,9 +97,16 @@ h2{
     margin-bottom: 20px;
 }
 #progress{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #c0a53c, #ffd789);
+    z-index: 1000;
     transform-origin:0 50%;
     animation:grow-progress linear forwards;
     animation-timeline: scroll();
+    box-shadow: 0 2px 10px rgba(192, 165, 60, 0.5);
 }
 .albumy {
     display: flex;
@@ -123,20 +130,67 @@ h2{
 }
 .members{
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
     margin-top: 60px;
+    margin-bottom: 60px;
 }
+
+.members figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 300ms ease;
+}
+
+.members figure:hover {
+    transform: translateY(-10px);
+}
+
 .members img {
     width: 200px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    transition: transform 300ms;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    display: block;
+    transition: filter 300ms ease;
 }
-.members img:hover {
-    transform: scale(1.05);
+
+.members figure:hover img {
+    filter: brightness(1.1) drop-shadow(0 0 20px rgba(192, 165, 60, 0.4));
+}
+
+figcaption{
+    font-family: 'Magtis',sans-serif;
+    color:#c0a53c;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.members-title {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    background: rgba(25, 25, 25, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
+    border-radius: 15px;
+    border: 2px solid #c0a53c;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.members + h2 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 @media(max-width: 1200px) {
@@ -170,19 +224,3 @@ h2{
         border: 10px groove #c0a53c;
     }
 }
-/*!* 2. Desktop Adjustment *!*/
-/*@media (min-width: 1024px) {*/
-/*    .opishistoria {*/
-/*        flex-direction: row; !* Desktop: side-by-side *!*/
-/*        align-items: flex-start;*/
-/*        justify-content: space-between;*/
-/*    }*/
-
-/*    .mainphoto {*/
-/*        flex: 0 0 400px; !* Fix the image width on desktop *!*/
-/*    }*/
-
-/*    .historia {*/
-/*        flex: 1; !* Let the text take up the remaining space *!*/
-/*    }*/
-/*}*/
