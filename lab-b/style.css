@@ -7,7 +7,9 @@
     font-family: 'Magtis';
     src: url('lab-a/czcionki/Magtis.otf') format('truetype');
 }
-
+.przycisk-usuwania{
+    display: none;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #DAB1DA;
@@ -24,30 +26,103 @@ body {
     border: 1px solid #ddd;
     border-radius: 4px;
     flex: 1;
+    font-size: 16px;
 }
 
-.przycisk-usuwania button,
-.dodawanie button {
-    padding: 10px 20px;
-    background-color: #FDF2FF;
-    color: #4B0158;
-    border-width: 5px;
+.sekcja-szukania input:focus {
+    outline: none;
     border-color: #4B0158;
+    box-shadow: 0 0 5px rgba(75, 1, 88, 0.3);
+}
+
+.Lista {
+    margin-bottom: 20px;
+}
+
+.Lista ul {
+    list-style: none;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.Lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    justify-content: space-between;
+}
+
+.Lista li:last-child {
+    border-bottom: none;
+}
+
+
+.przycisk-usuwania button {
+    padding: 10px 20px;
+    background-color: #FF6B6B;
+    color: white;
+    border: 2px solid #FF6B6B;
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
-    font-family: 'Magtis',sans-seri;
+    font-weight: bold;
+    transition: all 0.2s;
+}
 
+.przycisk-usuwania button:hover {
+    background-color: #FF5252;
+    border-color: #FF5252;
+    transform: scale(1.05);
 }
-.sekcja-szukania button:hover,
-.przycisk-usuwania button:hover,
-.dodawanie button:hover {
-    background-color: #B266B2;
+.Lista li span {
+    flex: 1;
+    cursor: pointer;
+    word-break: break-word;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.2s;
 }
+
+.Lista li span:hover {
+    background-color: #f0f0f0;
+}
+
+.Lista li small {
+    font-size: 0.85em;
+    color: #999;
+    margin-right: auto;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
+mark {
+    background-color: #FFFF00;
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.deletebutton {
+    padding: 6px 12px;
+    background-color: #FF6B6B;
+    color: white;
+    border: 1px solid #FF6B6B;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+
+.deletebutton:hover {
+    background-color: #FF5252;
+}
+
 .dodawanie {
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
     flex-wrap: wrap;
 }
 .dodawanie input {
@@ -56,14 +131,36 @@ body {
     border-radius: 4px;
     flex: 1;
     min-width: 200px;
+    font-size: 16px;
 }
-.task-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
+.dodawanie input:focus {
+    outline: none;
+    border-color: #4B0158;
+    box-shadow: 0 0 5px rgba(75, 1, 88, 0.3);
 }
-.task-checkbox {
-    width: 20px;
-    height: 20px;
+
+.dodawanie button {
+    padding: 10px 20px;
+    background-color: #FDF2FF;
+    color: #4B0158;
+    border-width: 2px;
+    border-color: #4B0158;
+    border-style: solid;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.dodawanie button:hover {
+    background-color: #B266B2;
+    color: #FDF2FF;
+    transform: scale(1.05);
+}
+
+.dodawanie button:active {
+    transform: scale(0.98);
 }
