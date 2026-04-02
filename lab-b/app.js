@@ -1,54 +1,63 @@
 class Todo {
 
     tasks = [];
+    term = '';
 
     constructor() {
         this.tasks = JSON.parse(localStorage.getItem('todoList')) || [];
         this.draw();
     }
 
+    get filteredTasks() {
+        if (this.term.length < 2) {
+            return this.tasks;
+        }
+        return this.tasks.filter(task => 
+            task.text.toLowerCase().includes(this.term.toLowerCase())
+        );
+    }
 
-    draw(filterText="") {
+
+    draw() {
         const lista = document.querySelector('#list');
         lista.innerHTML = '';
 
-        this.tasks.forEach((task,index) => {
-            if(filterText.length>=2&& !task.text.toLowerCase().includes(filterText.toLowerCase())) {
-            return;
-            }
+        this.filteredTasks.forEach((task, index) => {
+            const realIndex = this.tasks.indexOf(task);
             const li = document.createElement('li');
-            li.dataset.index = index;
-            
+            li.dataset.index = realIndex;
+
             const span=document.createElement('span');
             const small=document.createElement('small');
             const button=document.createElement('button');
 
             //przygotowanie tekstu z ew podswietleniem
             let tasktodo=task.text;
-            if(filterText.length>=2){
-                const regex = new RegExp(`(${filterText})`, 'gi');
+            if(this.term.length >= 2){
+                const regex = new RegExp(`(${this.term})`, 'gi');
                 tasktodo = tasktodo.replace(regex, '<mark>$1</mark>');
                 span.innerHTML = tasktodo;
             } else {
                 span.innerText = tasktodo;
             }
             span.style.cursor='pointer';
-            span.onclick=()=> this.edit(index, li);
+            span.onclick=()=> this.edit(realIndex, li);
 
             //wyświetlenie daty jeśli istnieje
             if(task.date) {
                 small.innerText = new Date(task.date).toLocaleString('pl-PL');
                 small.style.cursor = 'pointer';
-                small.onclick=()=> this.edit(index, li);
+                small.onclick=()=> this.edit(realIndex, li);
             }
-
-            button.innerText='Usuń';
-            button.className= 'deletebutton';
-            button.onclick=()=>this.remove(index);
 
             li.appendChild(span);
             li.appendChild(small);
+            
+            button.innerText='Usuń';
+            button.className= 'deletebutton';
+            button.onclick=()=>this.remove(realIndex);
             li.appendChild(button);
+            
             lista.appendChild(li);
 
         });
@@ -149,7 +158,8 @@ document.getElementById('addButton').addEventListener('click', function() {
 });
 
 document.getElementById('searchInput').addEventListener('input', function(e) {
-    todo.draw(e.target.value);
+    todo.term = e.target.value;
+    todo.draw();
 });
 
 
