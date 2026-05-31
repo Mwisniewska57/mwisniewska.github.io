@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/lab-d/sygnaly_fouriera.py">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/lab-d/sygnaly_fouriera.py" />
+              <option name="updatedContent" value="import numpy as np&#10;import matplotlib.pyplot as plt&#10;&#10;&quot;&quot;&quot;&#10;MODULACJA SYGNAŁÓW - AMPLITUDA, FAZA, CZĘSTOTLIWOŚĆ&#10;====================================================&#10;fm = 10 Hz        (częstotliwość modulująca)&#10;fn = 200 Hz       (częstotliwość nośna)&#10;fs = 2000 Hz      (częstotliwość próbkowania)&#10;&quot;&quot;&quot;&#10;&#10;fm = 10&#10;fn = 200&#10;fs = 2000&#10;t = np.linspace(0, 0.2, fs)&#10;m = np.sin(2*np.pi*fm*t)&#10;&#10;A = {'a': 0.5, 'b': 5.0, 'c': 25.0}&#10;B = {'a': 0.5, 'b': 1.5, 'c': 7.0}&#10;C = {'a': 0.5, 'b': 1.5, 'c': 7.0}&#10;&#10;def rysuj(tytul, wartosci, typ):&#10;    &quot;&quot;&quot;Rysuje sygnały i ich widma dla różnych parametrów&quot;&quot;&quot;&#10;    fig, axes = plt.subplots(len(wartosci), 2, figsize=(14, 5*len(wartosci)))&#10;    if len(wartosci) == 1:&#10;        axes = [axes]&#10;&#10;    fig.suptitle(tytul, fontsize=14, fontweight='bold')&#10;&#10;    for i, (klucz, k) in enumerate(wartosci.items()):&#10;        # === GENERUJ SYGNAŁ ===&#10;        if typ == 'AMPLITUDA':&#10;            z = (k*m + 1) * np.cos(2*np.pi*fn*t)&#10;        elif typ == 'FAZA':&#10;            z = np.cos(2*np.pi*fn*t + k*m)&#10;        elif typ == 'CZESTOTLIWOSC':&#10;            z = np.cos(2*np.pi*fn*t + k/fm*m)&#10;&#10;        # === OBLICZ FFT (WIDMO) ===&#10;        N = len(z)&#10;        X = np.fft.fft(z)&#10;        freqs = np.fft.fftfreq(N, 1/fs)&#10;&#10;        # Weź tylko dodatnie częstotliwości&#10;        idx = freqs &gt;= 0&#10;        freqs = freqs[idx]&#10;        spectrum = np.abs(X[idx]) / (N/2)&#10;&#10;        # === LEWO: SYGNAŁY W DZIEDZINIE CZASU ===&#10;        # Sygnał informacyjny (niebieski)&#10;        axes[i][0].plot(t, m, 'b-', linewidth=2, label='Sygnał informacyjny')&#10;        # Sygnał zmodulowany (szary)&#10;        axes[i][0].plot(t, z, color='gray', linewidth=1.5, alpha=0.8, label='Sygnał zmodulowany')&#10;        axes[i][0].set_title(f'{typ} - k={k}', fontweight='bold')&#10;        axes[i][0].set_ylabel('Amplituda')&#10;        axes[i][0].set_xlabel('Czas [s]')&#10;        axes[i][0].legend(loc='upper right', fontsize=9)&#10;        axes[i][0].grid(alpha=0.3)&#10;&#10;        # === PRAWO: WIDMO AMPLITUDOWE ===&#10;        axes[i][1].stem(freqs, spectrum, basefmt=' ', linefmt='C0-', markerfmt='C0o')&#10;        axes[i][1].set_title(f'Widmo amplitudowe - k={k}', fontweight='bold')&#10;        axes[i][1].set_ylabel('Amplituda')&#10;        axes[i][1].set_xlabel('Częstotliwość [Hz]')&#10;        axes[i][1].set_xlim(0, 500)&#10;        axes[i][1].grid(alpha=0.3)&#10;&#10;    plt.tight_layout()&#10;    plt.show()&#10;&#10;# === GENERUJ WYKRESY ===&#10;rysuj('MODULACJA AMPLITUDY', A, 'AMPLITUDA')&#10;rysuj('MODULACJA FAZY', B, 'FAZA')&#10;rysuj('MODULACJA CZĘSTOTLIWOŚCI', C, 'CZESTOTLIWOSC')&#10;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

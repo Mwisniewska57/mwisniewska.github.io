@@ -1,0 +1,120 @@
+body {
+  background-color: #B0C4DE;
+}
+@font-face {
+  font-family:'Magtis';
+  src: url("czcionki/Magtis.otf") format("opentype");
+
+}
+h1{
+  text-align: center;
+  font-family: Magtis;
+  color: #001019;
+
+}
+.inputmiasto{
+  display:flex;
+  justify-content: center;
+}
+#search{
+  padding: 8px 18px;
+  border: 1px solid #778899;
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  font-family: Magtis, sans-serif;
+  font-size: 16px;
+  color: #e4e2ec;
+  background-color: #001019;
+  cursor: pointer;
+}
+
+#search:hover{
+  filter: brightness(1.1) drop-shadow(0 0 10px #0E0543);
+}
+h2{
+  font-family: Magtis;
+  color:#001019;
+  margin: 20px;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+#city {
+  padding: 8px 14px;
+  border: 1px solid #778899;
+  border-radius: 8px 0 0 8px;
+  font-size: 16px;
+  outline: none;
+  width: 260px;
+  background-color: #e8f0f7;
+  color: #0E0543;
+}
+#forecast-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0 20px 20px;
+}
+.forecast-card {
+  background-color: #001019;
+  border: 1px solid #778899;
+  border-radius: 12px;
+  padding: 12px 16px;
+  text-align: center;
+  flex: 1 1 120px;
+  color: #e4e2ec;
+  font-family: Magtis, sans-serif;
+}
+.forecast p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+#current-result {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #001019;
+  border: 1px solid #778899;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin: 0 20px 20px;
+  color: #e4e2ec;
+  font-family: Magtis, sans-serif;
+  font-size: 18px;
+}
+
+#current-result img {
+  width: 64px;
+  height: 64px;
+}
+
+#current-result p {
+  margin: 0;
+  font-size: 18px;
+}
+@media (max-width: 500px) {
+  .inputmiasto {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  #city {
+    width: 80%;
+    border-radius: 8px;
+  }
+
+  #search {
+    width: 80%;
+    border-left: 1px solid #778899;
+    border-radius: 8px;
+  }
+
+  .forecast-results {
+    flex: 1 1 100%;
+  }
+  #current-result {
+    margin: 0 10px 20px;
+    font-size: 16px;}
+}
+

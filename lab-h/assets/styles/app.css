@@ -1,0 +1,149 @@
+:root {
+    --bg: #b376a3;
+    --card: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --primary: #851c6a;
+    --primary-hover: #833f72;
+    --danger: #cf6464;
+    --danger-hover: #bd0000;
+    --radius: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.5;
+}
+
+/* Main heading */
+h1 {
+    margin: 0 0 20px;
+    font-size: 1.8rem;
+}
+
+/* Content wrapper for pages */
+.container-fluid {
+    max-width: 960px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+}
+
+
+.table.custom {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.table.custom th,
+.table.custom td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+}
+
+.table.custom th {
+    background: #f9fafb;
+    font-weight: 700;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+
+
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+.actions a {
+    margin-right: 10px;
+}
+
+
+.btn,
+button,
+input[type="submit"] {
+    display: inline-block;
+
+    margin: 5px;
+    padding: 10px 14px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover {
+    background: var(--primary-hover);
+    text-decoration: none;
+}
+
+/* Danger button (e.g. delete) */
+.btn-delete {
+    margin:4px;
+    background: var(--danger);
+}
+
+.btn-delete:hover {
+    background: var(--danger-hover);
+}
+
+/* Forms */
+form {
+    margin-top: 12px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 6px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: #fff;
+    color: var(--text);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #bfdbfe;
+    border-color: #93c5fd;
+}
