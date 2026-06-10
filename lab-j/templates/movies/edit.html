@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Edit Movie {{ movie.title }} ({{ movie.id }})</h1>
+{% if error %}<p>{{ error }}</p>{% endif %}
+
+<form action="{{ url_for('movies.movie_update', movie_id=movie.id) }}" method="POST" class="edit-form">
+    {% include 'movies/_form.html' %}
+</form>
+
+<ul class="action-list">
+    <li><a href="{{ url_for('movies.movie_index') }}">Back to list</a></li>
+    <li>
+        <form action="{{ url_for('movies.movie_delete', movie_id=movie.id) }}" method="POST">
+            <input type="submit" value="Delete" onclick="return confirm('Are you sure?')">
+        </form>
+    </li>
+</ul>
+{% endblock %}
+

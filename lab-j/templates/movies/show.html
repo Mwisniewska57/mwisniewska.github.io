@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ movie.title }}</h1>
+<h2>{{ movie.director }}</h2>
+
+<ul class="action-list">
+    <li><a href="{{ url_for('movies.movie_index') }}">Back to list</a></li>
+    <li><a href="{{ url_for('movies.movie_edit', movie_id=movie.id) }}">Edit</a></li>
+</ul>
+{% endblock %}
+

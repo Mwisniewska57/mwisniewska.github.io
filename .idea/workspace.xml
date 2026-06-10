@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4470afd8-6316-4673-8ef4-93758339a3d5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/mwisniewska.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mwisniewska.github.io.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4470afd8-6316-4673-8ef4-93758339a3d5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,20 +17,28 @@
   <component name="CopilotChats">
     <option name="panelChat">
       <chat>
-        <option name="activeSessionId" value="f5c50d0c-d447-4431-800c-b168dc1c1473" />
+        <option name="activeSessionId" value="ba493375-3070-4724-9aab-37c868b0bc27" />
         <option name="sessions">
           <session>
             <option name="chatType" value="PANEL" />
             <option name="id" value="b000486b-4df3-48f2-99be-75f050b0f56b" />
-            <option name="modeId" value="Agent" />
+            <option name="modeId" value="Ask" />
             <option name="modelType" value="builtin_family" />
             <option name="modelValue" value="auto" />
-            <option name="status" value="WaitingForResponse" />
+            <option name="status" value="Completed" />
             <option name="targetType" value="LOCAL" />
           </session>
           <session>
             <option name="chatType" value="PANEL" />
             <option name="id" value="f5c50d0c-d447-4431-800c-b168dc1c1473" />
+            <option name="modeId" value="Ask" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="ba493375-3070-4724-9aab-37c868b0bc27" />
             <option name="modeId" value="Ask" />
             <option name="modelType" value="builtin_family" />
             <option name="modelValue" value="auto" />
@@ -317,6 +322,7 @@
       <workItem from="1780419382798" duration="1531000" />
       <workItem from="1780648092716" duration="152000" />
       <workItem from="1781110308834" duration="6058000" />
+      <workItem from="1781125317722" duration="2582000" />
     </task>
     <servers />
   </component>

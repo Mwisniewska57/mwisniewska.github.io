@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Add Movie</h1>
+{% if error %}<p>{{ error }}</p>{% endif %}
+
+<form action="{{ url_for('movies.movie_create') }}" method="POST" class="edit-form">
+    {% include 'movies/_form.html' %}
+</form>
+
+<a href="{{ url_for('movies.movie_index') }}">Back to list</a>
+{% endblock %}
+
