@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4470afd8-6316-4673-8ef4-93758339a3d5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/mwisniewska.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mwisniewska.github.io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/lab-h/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="f5c50d0c-d447-4431-800c-b168dc1c1473" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="b000486b-4df3-48f2-99be-75f050b0f56b" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="status" value="WaitingForResponse" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="f5c50d0c-d447-4431-800c-b168dc1c1473" />
+            <option name="modeId" value="Ask" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/wisni/PhpstormProjects/mwisniewska.github.io" value="3AzDMIFuz551cv5Bt6KfP4WuLuK" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedChatMode">
+    <option name="chatModeId" value="Ask" />
+  </component>
+  <component name="CopilotUserSelectedModel">
+    <selectedModels>
+      <entry key="chat-panel" value="Claude Haiku 4.5" />
+      <entry key="agent-panel" value="Claude Haiku 4.5" />
+    </selectedModels>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="TypeScript File" />
+        <option value="CSS File" />
+        <option value="PHP File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="$USER_HOME$/AppData/Local/Microsoft/WinGet/Packages/PHP.PHP.8.1_Microsoft.Winget.Source_8wekyb3d8bbwe/php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/messenger" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/notifier" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/password-hasher" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/polyfill-php84" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/polyfill-php85" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/runtime" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/stimulus-bundle" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/type-info" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/ux-turbo" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/sebastian/git-state" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/composer" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/asset-mapper" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/doctrine-messenger" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/lab-h/vendor/symfony/http-kernel" />
+    </include_path>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3AzDMIFuz551cv5Bt6KfP4WuLuK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.app.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/wisni/PhpstormProjects/mwisniewska.github.io/lab-j&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.3337041&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\wisni\\PhpstormProjects\\mwisniewska.github.io\\lab-e\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wisni\PhpstormProjects\mwisniewska.github.io\lab-e\src" />
+      <recent name="C:\Users\wisni\PhpstormProjects\mwisniewska.github.io\lab-c" />
+      <recent name="C:\Users\wisni\PhpstormProjects\mwisniewska.github.io\lab-b" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wisni\PhpstormProjects\mwisniewska.github.io\lab-i\crud\views" />
+      <recent name="C:\Users\wisni\PhpstormProjects\mwisniewska.github.io\lab-i\crud\views\movies" />
+      <recent name="C:\Users\wisni\PhpstormProjects\mwisniewska.github.io\lab-e\public" />
+      <recent name="C:\Users\wisni\PhpstormProjects\mwisniewska.github.io\lab-d" />
+      <recent name="C:\Users\wisni\PhpstormProjects\mwisniewska.github.io\lab-a" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/lab-b">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-a98d8de5180a-0e0d91225499-com.jetbrains.php.sharedIndexes-PS-253.31033.138" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4470afd8-6316-4673-8ef4-93758339a3d5" name="Changes" comment="" />
+      <created>1773586458874</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773586458874</updated>
+      <workItem from="1773586459341" duration="2358000" />
+      <workItem from="1773590870722" duration="1017000" />
+      <workItem from="1773591956022" duration="80000" />
+      <workItem from="1773592051029" duration="28000" />
+      <workItem from="1773592091929" duration="6186000" />
+      <workItem from="1773678557832" duration="39764000" />
+      <workItem from="1774537722169" duration="10393000" />
+      <workItem from="1774603918145" duration="4427000" />
+      <workItem from="1775033446436" duration="2991000" />
+      <workItem from="1775075209089" duration="4417000" />
+      <workItem from="1775146384369" duration="14488000" />
+      <workItem from="1775557878340" duration="4138000" />
+      <workItem from="1775809471998" duration="4516000" />
+      <workItem from="1775923268098" duration="4333000" />
+      <workItem from="1776610488447" duration="7035000" />
+      <workItem from="1776971295219" duration="4144000" />
+      <workItem from="1777020283794" duration="3670000" />
+      <workItem from="1777125974721" duration="6642000" />
+      <workItem from="1778238540103" duration="5656000" />
+      <workItem from="1778834700471" duration="940000" />
+      <workItem from="1778836011663" duration="109000" />
+      <workItem from="1779439087916" duration="105000" />
+      <workItem from="1779439328699" duration="1357000" />
+      <workItem from="1780317680676" duration="413000" />
+      <workItem from="1780419382798" duration="1531000" />
+      <workItem from="1780648092716" duration="152000" />
+      <workItem from="1781110308834" duration="6058000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

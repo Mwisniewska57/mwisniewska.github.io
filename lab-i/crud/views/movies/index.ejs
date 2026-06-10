@@ -1,0 +1,22 @@
+<%- include('../_head') %>
+<h1>Movie list</h1>
+
+<a href="/movie/new">Create new</a>
+
+<ul class="index-list">
+    <% movies.forEach(function(movie) { %>
+        <li>
+            <h3><%= movie.title %></h3>
+
+            <ul class="action-list">
+                <li>
+                    <a href="/movie/<%= movie.id %>">Details</a>
+                </li>
+
+                <li>
+                    <a href="/movie/<%= movie.id %>/edit">Edit</a>
+                </li>
+            </ul>
+        </li>
+    <% }) %>
+</ul>
